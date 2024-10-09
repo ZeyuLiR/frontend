@@ -7,6 +7,8 @@ import TourBooking from './components/TourBooking';
 import TourBookingRecord from './components/TourBookingRecord';
 import TableBooking from './components/TableBooking';
 import TableBookingRecord from './components/TableBookingRecord';
+import Order from './components/Order';
+import OrderRecord from './components/OrderRecord';
 import PrivateRoute from './components/PrivateRoute'; // 引入 PrivateRoute 组件
 
 function App() {
@@ -55,6 +57,24 @@ function App() {
           element={
             <PrivateRoute>
               <TableBookingRecord />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="/order-food"
+          element={
+            <PrivateRoute>
+              <Order />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="/order-record"
+          element={
+            <PrivateRoute>
+              <OrderRecord />
             </PrivateRoute>
           }
         />

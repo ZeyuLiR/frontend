@@ -7,7 +7,7 @@ const formatDate = (timestamp) => {
   return date.toLocaleString();  // Adjust this format as needed
 };
 
-const jwt = localStorage.getItem('jwt'); // 假设 JWT 存储在 localStorage
+const jwt = localStorage.getItem('jwt'); 
 const TableBookingRecord = () => {
   const [bookingRecords, setBookingRecords] = useState([]);
   const navigate = useNavigate();

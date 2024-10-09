@@ -51,6 +51,20 @@ function ServicePage() {
         >
           Table Booking Record
         </button>
+
+        <button
+          onClick={() => navigate('/order-food')}
+          className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600"
+        >
+          Order Food
+        </button>
+
+        <button
+          onClick={() => navigate('/order-record')}
+          className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600"
+        >
+          Order Record
+        </button>
       </div>
     </div>
   );
